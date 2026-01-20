@@ -1,3 +1,39 @@
 body {
-    background-color: aquamarine;
+    background: blue;
+    color: antiquewhite;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: brown;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* for the navigation */
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-evenly;
+    /* to distribute the links horizontally */
+}
+
+h1 {
+    font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+    /* this list will let your browser fall back on fonts if it can't find the first */
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        /* make the elements inside of main sit next to each other */
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    ul {
+        display: block;
+        padding-left: 2em;
+    };
 }
